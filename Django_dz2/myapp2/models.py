@@ -10,6 +10,10 @@ class Client(models.Model):
     address = models.CharField(max_length=150)
     register_date = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f'Name: {self.name}, email: {self.email}, phone: {self.phone}, address: {self.address}, ' \
+                f'register_date: {self.register_date}'
+
 
 class Product(models.Model):
     name = models.CharField(max_length=30)
@@ -18,9 +22,17 @@ class Product(models.Model):
     amount = models.IntegerField(default=1)
     create_date = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f'Name: {self.name} ,Description: {self.description} ,Price: {self.price:.2f} ' \
+               f',Amount: {self.amount} ,Create_date: {self.create_date} '
+
 
 class Order(models.Model):
-    customer = models.ForeignKey(Client, on_delete=models.CASCADE)
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
     products = models.ManyToManyField(Product)
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
-    date_ordered = models.DateTimeField(auto_now_add=True)
+    order_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'ID Client: {self.client}' \
+               f',Total price: {self.total_price:.2f} ,Order_date: {self.order_date}'

@@ -1,0 +1,45 @@
+INFO 2023-09-26 11:34:22,995 views 9856 28704 Index page accessed
+INFO 2023-09-26 11:44:40,949 my_command 18776 20796 Help requested!
+INFO 2023-09-26 11:53:35,498 my_command 22052 15300 Help requested!
+INFO 2023-09-26 13:46:18,061 create_client 19632 28232 Successfully create client: Name: John, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:46:18.055859+00:00
+INFO 2023-09-26 13:47:01,002 delete_client 18736 8024 Successfully delete client (id=2): Name: John, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:16:44.278358+00:00
+WARNING 2023-09-26 13:50:35,414 get_client 28920 24760 Client (id=2) don't exist!
+INFO 2023-09-26 13:50:38,271 get_client 27184 29424 Successfully get client (id=1): Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00
+INFO 2023-09-26 13:50:59,055 get_all_clients 16816 20676 Get all clients!
+INFO 2023-09-26 15:12:00,116 create_product 22472 14716 Successfully create product: Name: Tesla ,Description: Best electric car ,Price: 0.50 ,Amount: 11 ,Create_date: 2023-09-26 12:12:00.113095+00:00 
+INFO 2023-09-26 15:12:50,541 create_product 28892 13856 Successfully create product: Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 12:12:50.530102+00:00 
+INFO 2023-09-26 15:13:08,444 get_all_products 9480 25092 Get all products!
+INFO 2023-09-26 15:13:51,925 create_product 1884 21196 Successfully create product: Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 12:13:51.920890+00:00 
+INFO 2023-09-26 15:13:59,772 delete_product 8128 1576 Successfully delete product (id=2): Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 12:12:50.530102+00:00 
+INFO 2023-09-26 15:14:30,659 get_all_products 25856 21360 Get all products!
+INFO 2023-09-26 15:42:33,014 get_all_products 16024 20832 Get all products!
+INFO 2023-09-26 15:43:10,940 update_product 24804 9360 Successfully update client (id=1): Name: Toyota ,Description: Best electric car ,Price: 0.50 ,Amount: 11 ,Create_date: 2023-09-26 12:12:00.113095+00:00 
+INFO 2023-09-26 15:43:15,302 get_all_products 11560 6596 Get all products!
+INFO 2023-09-26 15:43:35,604 create_product 24548 2468 Successfully create product: Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 12:43:35.600707+00:00 
+INFO 2023-09-26 15:43:40,473 get_all_products 24472 27040 Get all products!
+INFO 2023-09-26 15:48:54,585 create_product 20704 19744 Successfully create product: Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 12:48:54.582786+00:00 
+INFO 2023-09-26 15:49:18,422 get_all_orders 28552 8676 Get all orders!
+WARNING 2023-09-26 15:49:33,156 get_order 24548 13612 Order (id=0) don't exist!
+WARNING 2023-09-26 15:49:35,171 get_order 22628 16984 Order (id=1) don't exist!
+INFO 2023-09-26 15:49:38,986 create_product 22140 4712 Successfully create product: Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 12:49:38.977017+00:00 
+INFO 2023-09-26 15:49:48,850 get_all_products 18516 2660 Get all products!
+INFO 2023-09-26 15:49:56,811 delete_product 22668 13004 Successfully delete product (id=5): Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 12:48:54.582786+00:00 
+WARNING 2023-09-26 15:50:00,948 delete_product 25500 13140 Product (id=5) don't exist!
+INFO 2023-09-26 15:50:04,369 delete_product 14904 13644 Successfully delete product (id=4): Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 12:43:35.600707+00:00 
+INFO 2023-09-26 15:50:34,640 get_all_clients 20704 28936 Get all clients!
+WARNING 2023-09-26 15:50:59,760 get_client 8676 368 Client (id=0) don't exist!
+INFO 2023-09-26 15:51:03,639 get_client 1924 13896 Successfully get client (id=1): Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00
+INFO 2023-09-26 15:56:07,145 get_client 13928 19732 Successfully get client (id=1): Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00
+WARNING 2023-09-26 15:56:11,306 get_client 19240 24348 Client (id=0) don't exist!
+INFO 2023-09-26 15:58:07,472 create_order 27148 23800 Successfully create order: ID Client: Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00 ,ID Products: myapp2.Product.None ,Total price: 321.09 ,Order_date: 2023-09-26 12:58:07.461458+00:00
+INFO 2023-09-26 15:58:57,575 get_all_orders 10000 11716 Get all orders!
+INFO 2023-09-26 15:59:13,609 delete_order 20512 5416 Successfully delete order (id=5): ID Client: Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00 ,ID Products: myapp2.Product.None ,Total price: 321.09 ,Order_date: 2023-09-26 12:58:07.461458+00:00
+INFO 2023-09-26 15:59:16,790 delete_order 29348 11228 Successfully delete order (id=4): ID Client: Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00 ,ID Products: myapp2.Product.None ,Total price: 321.09 ,Order_date: 2023-09-26 12:56:30.848005+00:00
+INFO 2023-09-26 16:02:33,485 update_order 25412 15624 Successfully update order (id=3): ID Client: Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00 ,ID Products: myapp2.Product.None ,Total price: 44.44 ,Order_date: 2023-09-26 12:55:19.457471+00:00
+INFO 2023-09-26 16:07:49,946 create_client 18948 23936 Successfully create client: Name: John, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 13:07:49.942485+00:00
+INFO 2023-09-26 16:08:10,030 create_product 23120 20796 Successfully create product: Name: Tesla ,Description: Best electric car ,Price: 123456.78 ,Amount: 11 ,Create_date: 2023-09-26 13:08:10.021048+00:00 
+INFO 2023-09-26 16:08:33,018 get_client 16256 25648 Successfully get client (id=1): Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00
+INFO 2023-09-26 16:14:32,294 create_order 28072 27360 Successfully create order: Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00
+INFO 2023-09-26 16:16:43,750 create_order 23140 16048 Successfully create order: ID Client: Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00,Total price: 321.09 ,Order_date: None
+INFO 2023-09-26 16:17:20,307 create_order 10980 18752 Successfully create order: ID Client: Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00,Total price: 321.09 ,Order_date: 2023-09-26 13:17:20.294280+00:00
+INFO 2023-09-26 16:17:47,669 create_order 11436 17468 Successfully create order: ID Client: Name: Oliver, email: john@example.com, phone: +7-123-456-78-90, address: 221B Baker Street, London NW1 6XE, England, register_date: 2023-09-26 10:00:06.392644+00:00,Total price: 321.09 ,Order_date: 2023-09-26 13:17:47.652770+00:00
