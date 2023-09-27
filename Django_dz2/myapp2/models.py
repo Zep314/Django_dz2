@@ -4,6 +4,9 @@ from django.db import models
 
 
 class Client(models.Model):
+    """
+    Описываем модель данных для работы с таблицей клиентов
+    """
     name = models.CharField(max_length=100)
     email = models.EmailField()
     phone = models.CharField(max_length=20)
@@ -16,6 +19,9 @@ class Client(models.Model):
 
 
 class Product(models.Model):
+    """
+    Описываем модель данных для работы с таблицей товаров
+    """
     name = models.CharField(max_length=30)
     description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
@@ -28,11 +34,14 @@ class Product(models.Model):
 
 
 class Order(models.Model):
+    """
+    Описываем модель данных для работы с таблицей заказов
+    """
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     products = models.ManyToManyField(Product)
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
     order_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'ID Client: {self.client}' \
-               f',Total price: {self.total_price:.2f} ,Order_date: {self.order_date}'
+        return f'Client: {self.client}, Product[s]: {self.products.all().values_list()}' \
+               f', Total price: {self.total_price:.2f} ,Order_date: {self.order_date}'

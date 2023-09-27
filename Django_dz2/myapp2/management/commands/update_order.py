@@ -7,6 +7,9 @@ logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
+    """
+    Пример работы с таблицей заказов: Изменение данных об одном конкретном заказе из базы данных
+    """
     help = "Update order name by id."
 
     def add_arguments(self, parser):

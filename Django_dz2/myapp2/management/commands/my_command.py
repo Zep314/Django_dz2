@@ -6,7 +6,9 @@ logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
-
+    """
+    Тест команды my_command
+    """
     help = "Print 'Hello world!' to output."
 
     def handle(self, *args, **kwargs):

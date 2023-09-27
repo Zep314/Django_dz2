@@ -7,20 +7,22 @@ logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
+    """
+    Пример работы с таблицей заказов: Создание заказа
+    """
     help = "Create order."
 
     def handle(self, *args, **kwargs):
-        client_pk = 1
+        client_pk = 1  # Выбираем, от какого клиента поступил заказ
         client = Client.objects.filter(pk=client_pk).first()
 
+        # Строим список товаров для заказа
         products = Product.objects.filter(name__contains="Tesla")
 
-        order = Order(id_client=client,
+        order = Order(client=client,
                       total_price=decimal.Decimal('321.09'))
-        order.save()
-
-        order.products.add(products)
-
+        order.save()                  # Сохраняем заказ
+        order.products.set(products)  # "Прицепляем" к созданному заказу выбранные товары
 
         logger.info(f'Successfully create order: {order}')
         self.stdout.write(f'{order}')

@@ -6,6 +6,9 @@ logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
+    """
+    Пример работы с таблицей клиентов: Удаление клиента
+    """
     help = "Delete client by id."
 
     def add_arguments(self, parser):

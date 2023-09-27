@@ -6,6 +6,9 @@ logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
+    """
+    Пример работы с таблицей клиентов: Чтение всех клиентов из базы данных
+    """
     help = "Get all clients."
 
     def handle(self, *args, **kwargs):

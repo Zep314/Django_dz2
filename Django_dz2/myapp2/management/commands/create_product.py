@@ -7,6 +7,9 @@ logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
+    """
+    Пример работы с таблицей товаров: Создание товара
+    """
     help = "Create product."
 
     def handle(self, *args, **kwargs):
