@@ -56,13 +56,13 @@
 
 - [Django_dz2/Django_dz2/Django_dz2/settings.py](/Django_dz2/Django_dz2/settings.py)
 - [Django_dz2/Django_dz2/Django_dz2/urls.py](/Django_dz2/Django_dz2/urls.py)
-- [Django_dz2/Django_dz2/myapp2/urls.py](/Django_dz2/Django_dz2/myapp2/urls.py)
+- [Django_dz2/Django_dz2/myapp2/urls.py](/Django_dz2/myapp2/urls.py)
 - [Django_dz2/Django_dz2/myapp2/views.py](/Django_dz2/myapp2/views.py)
 
 Создаем модель данных, в соответствие с заданием. 
 Модель данных находится в файле: 
 
-- [Django_dz2/Django_dz2/myapp2/models.py](/Django_dz2/Django_dz2/myapp2/models.py)
+- [Django_dz2/Django_dz2/myapp2/models.py](/Django_dz2/myapp2/models.py)
 
 Для каждой таблицы были реализованы все **CRUD** методы. Для таблицы заказов (Order) выполнена поддержка связи 
 Many-to-Many с таблицей товаров (Product). 
