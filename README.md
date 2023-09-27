@@ -100,7 +100,7 @@ Many-to-Many с таблицей товаров (Product).
 
 Файл с журналом работы:
 
-- [logs/django.log](/Django_dz1/logs/django.log) 
+- [logs/django.log](/Django_dz2/logs/django.log) 
 
 ## Результат работы:
 
